@@ -18,8 +18,8 @@ Navbar
 }
 
 body {
-    background-color: white;
-    background-image: url("../img/bg.jpg");
+    background-color: #F1C27B;
+    background-image: url("../img/print3.jpg");
     background-attachment: fixed;
     background-size: cover;
     font-family: "Roboto", sans-serif;
@@ -29,8 +29,8 @@ body {
 
 /* -- Navbar -- */
 nav {
-    color: black;
-    background: white;
+    color: #F1C27B;
+    background: #3D1F0C;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -38,31 +38,45 @@ nav {
     top: 0;
 }
 
+nav ul {
+    height: 60px;
+    vertical-align: center;
+    margin: 0;
+    padding: 0;
+}
+
 nav li {
     display: inline-block;
     padding: 0 10px;
+    transition: .3s;
+}
+
+nav li:hover {
+    background-color: #633314;
+    transition: .3s;
 }
 
 nav a {
-    color: black;
+    color: #F1C27B;
     text-decoration: none;
     transition: .3s;
 }
 
 nav a:hover {
-    color: lightblue;
+    color: #E5A405;
     text-decoration: none;
     transition: .3s;
 }
 
 /* -- Header -- */
 header {
+    /*background: #87d0fa;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 40vh;
     padding-bottom: 10vh;
-    color: white;
+    color: #F1C27B;
     text-align: center;
     text-transform: uppercase;
 }
@@ -73,13 +87,13 @@ h1 {
 }
 
 h1 a {
-    color: white;
+    color: #F1C27B;
     text-decoration: none;
     transition: .3s;
 }
 
 h1 a:hover {
-    color: lightblue;
+    color: #E5A405;
     text-decoration: none;
     transition: .3s;
 }
@@ -97,7 +111,8 @@ header li {
 section {
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 1);
+    color: #3D1F0C;
+    background: #F1C27B;
     height: 40vh;
     padding: 10vh 0;
     font-size: 1.7rem;
@@ -112,13 +127,13 @@ section h2 {
 }
 
 section a {
-    color: lightblue;
+    color: #3D1F0C;
     text-decoration: none;
     transition: .3s;
 }
 
 section a:hover {
-    color: lightsalmon;
+    color: #E5A405;
     text-decoration: none;
     transition: .3s;
 }
@@ -136,7 +151,7 @@ section ul {
 
 /* -- Footer -- */
 .window {
-    height: 30vh;
+    height: 50vh;
     z-index: -2;
 }
 
@@ -145,7 +160,7 @@ footer {
     position: fixed;
     bottom: 0;
     padding-bottom: 20px;
-    color: white;
+    color: #F1C27B;
     text-align: center;
     text-transform: uppercase;
     z-index: -1;
@@ -167,13 +182,13 @@ footer li {
 }
 
 footer a {
-    color: white;
+    color: #3D1F0C;
     text-decoration: none;
     transition: .3s;
 }
 
 footer a:hover {
-    color: lightblue;
+    color: #E5A405;
     text-decoration: none;
     transition: .3s;
 }
@@ -182,14 +197,19 @@ footer a:hover {
 /* -- Input & Textarea -- */
 
 input {
-    color: black;
+    color: #F1C27B;
     margin: 0 0 0 10px;
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid #F1C27B;
     transition: .3s;
 }
 
+input[type="submit"] {
+    margin: 0;
+}
+
 input:hover {
-    border-color: lightblue;
+    color: #E5A405;
+    border-color: #E5A405;
     transition: .3s;
 }
