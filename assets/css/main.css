@@ -5,13 +5,16 @@ Contact : benoit.jacques.felix@gmail.com
 Url: https://github.com/RQMplays/
 */
 
+
 /*
 TABLE DES MATIERES :
 General
 Navbar
 */
 
+
 /* -- General -- */
+
 @font-face {
     font-family: "Roboto";
     src: url("../font/Roboto-Regular.ttf");
@@ -27,11 +30,16 @@ body {
     padding: 0;
 }
 
+
 /* -- Navbar -- */
+
 nav {
+    display: flex;
+    justify-content: space-between;
     color: #F1C27B;
     background: #3D1F0C;
     width: 100%;
+    font-size: 10px;
     text-align: center;
     text-transform: uppercase;
     position: fixed;
@@ -39,24 +47,24 @@ nav {
 }
 
 nav ul {
-    height: 60px;
     vertical-align: center;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 nav li {
     display: inline-block;
-    padding: 0 10px;
     transition: .3s;
 }
 
-nav li:hover {
-    background-color: #633314;
-    transition: .3s;
+nav span {
+    display: block;
+    padding: 12px 10px;
 }
 
 nav a {
+    display: block;
+    padding: 16px 10px;
     color: #F1C27B;
     text-decoration: none;
     transition: .3s;
@@ -64,11 +72,14 @@ nav a {
 
 nav a:hover {
     color: #E5A405;
+    background-color: #6E3816;
     text-decoration: none;
     transition: .3s;
 }
 
+
 /* -- Header -- */
+
 header {
     /*background: #87d0fa;*/
     display: flex;
@@ -107,7 +118,10 @@ header li {
     display: inline-block;
     padding: 0 5px;
 }
+
+
 /* -- Section -- */
+
 section {
     display: flex;
     flex-direction: column;
@@ -115,14 +129,23 @@ section {
     background: #F1C27B;
     height: 40vh;
     padding: 10vh 0;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     text-align: center;
     justify-content: space-around;
     align-content: space-around;
 }
 
+.split-section {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    flex-basis: 50%;
+}
+
 section h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -143,13 +166,18 @@ section p {
 }
 
 section ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
+
 .annotations {
     font-size: 1rem;
 }
 
+
 /* -- Footer -- */
+
 .window {
     height: 50vh;
     z-index: -2;
@@ -212,4 +240,10 @@ input:hover {
     color: #E5A405;
     border-color: #E5A405;
     transition: .3s;
+}
+
+input:focus {
+    color: #E5A405;
+    border-color: #E5A405;
+    outline: 0;
 }
