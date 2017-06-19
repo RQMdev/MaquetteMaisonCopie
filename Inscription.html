@@ -18,78 +18,81 @@
         <ul class="form-connexion">
             <li><span>Login<input name="searchID" class="fg150owo12C2px" type="text" id="searchID" value="" size="15" maxlength="15"></span></li>
             <li><span>Mot-de-passe<input name="searchPWD" type="password" class="fg150owo12C2px" id="searchPWD" value="" size="15" maxlength="15"></span></li>
-            <li><span><input class="fg150owo12C2px" name="go" type="submit" id="go" value="CONNEXION"></span></li>
+            <li><span><input class="connexion" name="go" type="submit" id="go" value="CONNEXION"></span></li>
         </ul>
         <ul class="navigation">
-            <li><a href="#">Créer un compte</a></li>
-            <li><a href="#">Devis en ligne</a></li>
-            <li><a href="#">Nous contacter</a></li>
-            <li><a href="#">Notre société</a></li>
-            <li><a href="#">Horaires et Plan d'accès</a></li>
+            <li><a href="Inscription.html">Créer un compte</a></li>
+            <li><a href="Creer_Devis.html">Devis en ligne</a></li>
+            <li><a href="Notre_Societe.html">Nous contacter</a></li>
+            <li><a href="Notre_Societe.html">Notre société</a></li>
+            <li><a href="Notre_Societe.html">Horaires et Plan d'accès</a></li>
         </ul>
     </nav>
     <div id="page">
         <header>
-            <h1><a href="#">Maison de la Copie</a></h1>
+            <h1><a href="Index.html">Maison de la Copie</a></h1>
             <ul>
                 <li>Liberté</li>
                 <li>Egalité</li>
                 <li>Photocopies</li>
             </ul>
         </header>
-        <section>
-            <article class="coordonnees">
-                <h2>Coordonnées</h2>
-                <ul>
-                    <li>Statut<select name="csp" id="csp">
-                            <option value="" selected></option>
-                            <option value="Particulier">Particulier</option>
-                            <option value="Association">Association</option>
-                            <option value="Entreprise">Entreprise</option>
-                            <option value="Administration">Administration</option>
-                            <option value="Etudiant">Etudiant</option>
-                        </select>
-                    </li>
-                    <li>Nom / Raison Sociale<input name="ste" type="text" id="ste" value="" size="50" maxlength="50">
-                    </li>
-                    <li>Email<input name="email" type="text" id="email2" value="" size="40" maxlength="40"></li>
-                    <li>Adresse<input name="adr1" type="text" id="adr12" value="" size="40" maxlength="40"></li>
-                    <li>Complément d'adresse<input name="adr2" type="text" id="adr22" value="" size="40" maxlength="40">
-                    </li>
-                    <li>Ville<input name="ville" type="text" id="ville2" value="" size="40" maxlength="40"></li>
-                    <li>Code postal<input name="cp" type="text" id="cp2" value="" size="10" maxlength="10">
-                    </li>
-                    <li>Téléphone 1<input name="tel" type="text" id="tel3" value="" size="15" maxlength="15"></li>
-                    <li>Téléphone 2<input name="tel2" type="text" id="tel22" value="" size="15" maxlength="15"></li>
-                </ul>
-            </article>
-            <article class="renseignements">
-                <h2>Renseignements Complémentaires</h2>
-                <ul>
-                    <li>Nom<select name="genre" id="select5">
+        <section class="principal">
+            <section class="split-section">
+                <article class="coordonnees">
+                    <h2>Coordonnées</h2>
+                    <ul>
+                        <li class="obligatoire">Statut<select name="csp" id="csp">
                                 <option value="" selected></option>
-                                <option value="Mr">Mr</option>
-                                <option value="Mme">Mme</option>
-                                </select>
-                        <input name="nom" type="text" id="nom3" value="" size="40" maxlength="40">
-                    </li>
-                    <li>Prénom<input name="prenom" type="text" id="prenom3" value="" size="40" maxlength="40"></li>
-                    <li>Fonction dans l'organisation<input name="fonction" type="text" id="fonction3" value="" size="40" maxlength="40">
-                    </li>
-                    <li>Information Complémentaires<textarea name="infos" cols="50" rows="3" id="textarea2"></textarea></li>
-                </ul>
-                <p class="loi">Conformément à la loi informatique et liberté n° 78-17 du 6/01/1978, vous disposez d'un droit d'accés et de rectification auprés de LA MAISON DE LA COPIE et du Secrétariat, 10 bis avenue Henri Fréville. 35200 RENNES. France, ou par mail
-                    : contact@maison-copie.fr POURRIELS, NON MERCI ! : Notre établissement préservera la tranquillité de votre boite mail, de la même façon que nous aimons voir préserver la tranquillité de notre boite mail,. C'est l'avantage des entreprises
-                    à échelle humaine. Notez également que notre société ne cède pas ses fichiers mails à des tiers. (Votez www.maison-copie.fr !)
-                </p>
-                <p class="express">CONNEXION EXPRESSE FACILE : Remplissez uniquement les 3 champs obligatoires (statut, nom, email) vous serez connecté directement à votre compte avec accès immédiat aux devis-en-ligne www.maison-copie.fr. Vous pourrez compléter votre "fiche
-                    identité" ultérieurement.
-                </p>
-            </article>
+                                <option value="Particulier">Particulier</option>
+                                <option value="Association">Association</option>
+                                <option value="Entreprise">Entreprise</option>
+                                <option value="Administration">Administration</option>
+                                <option value="Etudiant">Etudiant</option>
+                            </select>
+                        </li>
+                        <li class="obligatoire">Nom / Raison Sociale<input name="ste" type="text" id="ste" value="" size="50" maxlength="50">
+                        </li>
+                        <li class="obligatoire">Email<input name="email" type="text" id="email2" value="" size="40" maxlength="40"></li>
+                        <li>Adresse<input name="adr1" type="text" id="adr12" value="" size="40" maxlength="40"></li>
+                        <li>Complément d'adresse<input name="adr2" type="text" id="adr22" value="" size="40" maxlength="40">
+                        </li>
+                        <li>Ville<input name="ville" type="text" id="ville2" value="" size="40" maxlength="40"></li>
+                        <li>Code postal<input name="cp" type="text" id="cp2" value="" size="10" maxlength="10">
+                        </li>
+                        <li>Téléphone 1<input name="tel" type="text" id="tel3" value="" size="15" maxlength="15"></li>
+                        <li>Téléphone 2<input name="tel2" type="text" id="tel22" value="" size="15" maxlength="15"></li>
+                    </ul>
+                </article>
+                <article class="renseignements">
+                    <h2>Renseignements Complémentaires</h2>
+                    <ul>
+                        <li>Nom<select name="genre" id="select5">
+                                    <option value="" selected></option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mme">Mme</option>
+                                    </select>
+                            <input name="nom" type="text" id="nom3" value="" size="40" maxlength="40">
+                        </li>
+                        <li>Prénom<input name="prenom" type="text" id="prenom3" value="" size="40" maxlength="40"></li>
+                        <li>Fonction dans l'organisation<input name="fonction" type="text" id="fonction3" value="" size="40" maxlength="40">
+                        </li>
+                        <li>Information Complémentaires<textarea name="infos" cols="50" rows="3" id="textarea2"></textarea></li>
+                    </ul>
+                    <p class="loi">Conformément à la loi informatique et liberté n° 78-17 du 6/01/1978, vous disposez d'un droit d'accés et de rectification auprés de LA MAISON DE LA COPIE et du Secrétariat, 10 bis avenue Henri Fréville. 35200 RENNES. France, ou par mail
+                        : contact@maison-copie.fr POURRIELS, NON MERCI ! : Notre établissement préservera la tranquillité de votre boite mail, de la même façon que nous aimons voir préserver la tranquillité de notre boite mail,. C'est l'avantage des entreprises
+                        à échelle humaine. Notez également que notre société ne cède pas ses fichiers mails à des tiers. (Votez www.maison-copie.fr !)
+                    </p>
+                    <p class="express">CONNEXION EXPRESSE FACILE : Remplissez uniquement les 3 champs obligatoires (statut, nom, email) vous serez connecté directement à votre compte avec accès immédiat aux devis-en-ligne www.maison-copie.fr. Vous pourrez compléter votre "fiche
+                        identité" ultérieurement.
+                    </p>
+                </article>
+            </section>
+            <div class="button compte"><a href="Inscription.html">Créer mon compte utilisateur</a></div>
         </section>
         <div class="window">
             <footer>
-                <div class="we-love-pdf"></div>
+                <div class="we-love-pdf"><span>WE <3 PDF</span></div>
                 <h3>Maison de la Copie</h3>
                 <ul>
                     <li>Liberté</li>
