@@ -39,21 +39,13 @@ nav {
 }
 
 nav ul {
-    height: 60px;
     vertical-align: center;
-    margin: 0;
     padding: 0;
 }
 
 nav li {
     display: inline-block;
     padding: 0 10px;
-    transition: .3s;
-}
-
-nav li:hover {
-    background-color: #633314;
-    transition: .3s;
 }
 
 nav a {
