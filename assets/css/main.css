@@ -90,6 +90,10 @@ nav input:hover {
     transition: .3s;
 }
 
+nav .connexion {
+    color: #E5A405;
+}
+
 nav .connexion:hover {
     background: #333;
     transition: .3s;
